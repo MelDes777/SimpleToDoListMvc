@@ -21,12 +21,12 @@ namespace SimpleTodoMvc.Controllers
         [HttpGet]
         public async Task<ActionResult> Index()
         {
-            IQueryable<ToDoList> items = from i in _context.ToDoList
+            IQueryable<ToDo> items = from i in _context.ToDoes
                                          orderby i.Id
                                          select i;
 
 
-            List<ToDoList> todoList = await items.ToListAsync();
+            List<ToDo> todoList = await items.ToListAsync();
 
             return View(todoList);
 
@@ -39,7 +39,7 @@ namespace SimpleTodoMvc.Controllers
         // Post /todo/create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(ToDoList item)
+        public async Task<ActionResult> Create(ToDo item)
         {
             if (ModelState.IsValid)
             {
@@ -60,7 +60,7 @@ namespace SimpleTodoMvc.Controllers
         [HttpGet]
         public async Task<ActionResult> Edit(int id)
         {
-            ToDoList item = await _context.ToDoList.FindAsync(id);
+            ToDo item = await _context.ToDoes.FindAsync(id);
 
             if (item == null)
             {
@@ -74,7 +74,7 @@ namespace SimpleTodoMvc.Controllers
         // Post /todo/edit/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(ToDoList item)
+        public async Task<ActionResult> Edit(ToDo item)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +94,7 @@ namespace SimpleTodoMvc.Controllers
         // GET /todo/delete/{id}
         public async Task<ActionResult> Delete(int id)
         {
-            ToDoList item = await _context.ToDoList.FindAsync(id);
+            ToDo item = await _context.ToDoes.FindAsync(id);
 
             if (item == null)
             {
@@ -102,7 +102,7 @@ namespace SimpleTodoMvc.Controllers
             }
             else
             {
-                _context.ToDoList.Remove(item);
+                _context.ToDoes.Remove(item);
                 await _context.SaveChangesAsync();
 
                 TempData["Success"] = "The item has been deleted!";

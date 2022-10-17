@@ -10,6 +10,6 @@ namespace SimpleTodoMvc.Infrustructure
         {
         }
 
-        public DbSet<ToDoList> ToDoList { get; set; }
+        public DbSet<ToDo> ToDoes { get; set; }
     }
 }
