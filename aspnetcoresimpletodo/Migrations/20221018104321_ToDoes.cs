@@ -2,12 +2,12 @@
 
 namespace SimpleTodoMvc.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class ToDoes : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ToDoList",
+                name: "ToDoes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -16,14 +16,14 @@ namespace SimpleTodoMvc.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ToDoList", x => x.Id);
+                    table.PrimaryKey("PK_ToDoes", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ToDoList");
+                name: "ToDoes");
         }
     }
 }

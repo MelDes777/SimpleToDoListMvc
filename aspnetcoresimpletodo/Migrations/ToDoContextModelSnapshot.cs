@@ -18,7 +18,7 @@ namespace SimpleTodoMvc.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SimpleTodoMvc.Models.ToDoList", b =>
+            modelBuilder.Entity("SimpleTodoMvc.Models.ToDo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -31,7 +31,7 @@ namespace SimpleTodoMvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ToDoList");
+                    b.ToTable("ToDoes");
                 });
 #pragma warning restore 612, 618
         }
