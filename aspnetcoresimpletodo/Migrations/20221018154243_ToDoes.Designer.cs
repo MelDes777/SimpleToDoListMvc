@@ -9,7 +9,7 @@ using SimpleTodoMvc.Infrustructure;
 namespace SimpleTodoMvc.Migrations
 {
     [DbContext(typeof(ToDoContext))]
-    [Migration("20221018104321_ToDoes")]
+    [Migration("20221018154243_ToDoes")]
     partial class ToDoes
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,7 +27,7 @@ namespace SimpleTodoMvc.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Content")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

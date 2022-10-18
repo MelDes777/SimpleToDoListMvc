@@ -5,13 +5,13 @@
 }
 
 <p>
-    <a asp-action="Create">Add new ToDo item</a>
+    <a asp-action="Create">Add a new ToDo item</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                Content
+                To Do List
             </th>
             <th></th>
         </tr>
@@ -20,7 +20,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @item.Content
+                @item.Description
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
