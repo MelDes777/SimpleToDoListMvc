@@ -1,7 +1,7 @@
-﻿using SimpleTodoMvc.Models;
+﻿using ToDoListMvcWebApp.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace SimpleTodoMvc.Infrustructure
+namespace ToDoListMvcWebApp.Infrustructure
 {
     public class ToDoContext : DbContext
     {

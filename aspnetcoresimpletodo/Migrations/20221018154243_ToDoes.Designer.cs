@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SimpleTodoMvc.Infrustructure;
+using ToDoListMvcWebApp.Infrustructure;
 
-namespace SimpleTodoMvc.Migrations
+namespace ToDoListMvcWebApp.Migrations
 {
     [DbContext(typeof(ToDoContext))]
     [Migration("20221018154243_ToDoes")]

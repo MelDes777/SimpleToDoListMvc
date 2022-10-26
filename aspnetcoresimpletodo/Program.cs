@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SimpleTodoMvc
+namespace ToDoListMvcWebApp
 {
     public class Program
     {

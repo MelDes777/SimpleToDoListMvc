@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Info Code Smell", "S1135:Track uses of \"TODO\" tags", Justification = "<Pending>", Scope = "type", Target = "~T:SimpleTodoMvc.Controllers.ToDoController")]
+[assembly: SuppressMessage("Info Code Smell", "S1135:Track uses of \"TODO\" tags", Justification = "<Pending>", Scope = "type", Target = "~T:ToDoListMvcWebApp.Controllers.ToDoController")]

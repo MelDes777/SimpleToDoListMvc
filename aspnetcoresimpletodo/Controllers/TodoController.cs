@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SimpleTodoMvc.Infrustructure;
-using SimpleTodoMvc.Models;
+using ToDoListMvcWebApp.Infrustructure;
+using ToDoListMvcWebApp.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SimpleTodoMvc.Controllers
+namespace ToDoListMvcWebApp.Controllers
 {
     public class ToDoController : Controller
     {

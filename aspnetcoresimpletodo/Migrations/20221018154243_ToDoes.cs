@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace SimpleTodoMvc.Migrations
+namespace ToDoListMvcWebApp.Migrations
 {
     public partial class ToDoes : Migration
     {

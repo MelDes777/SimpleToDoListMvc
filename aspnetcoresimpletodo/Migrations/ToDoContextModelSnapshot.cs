@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SimpleTodoMvc.Infrustructure;
+using ToDoListMvcWebApp.Infrustructure;
 
-namespace SimpleTodoMvc.Migrations
+namespace ToDoListMvcWebApp.Migrations
 {
     [DbContext(typeof(ToDoContext))]
     partial class ToDoContextModelSnapshot : ModelSnapshot
